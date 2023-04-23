@@ -73,7 +73,7 @@ describe('example to-do app', () => {
     // that the list element is now marked as completed.
     // Again we'll use `contains` to find the <label> element and then use the `parents` command
     // to traverse multiple levels up the dom until we find the corresponding <li> element.
-    // Once we get that element, we can assert that it has the completed class.
+    // Once we get that element, we can assert that it has the completed class. 
     cy.contains('Pay electric bill')
       .parents('li')
       .should('have.class', 'completed')
